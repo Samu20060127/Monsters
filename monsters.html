@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monsters</title>
+    <link rel="stylesheet" href="./monsters.css">
+    <link rel="icon" href="./icons/logo.svg">
+    <script src="./monsters1.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="monster-container">
+        <div class="monster-logo-text">
+            <img class="monsterlogo" src="./icons/logo.svg"></svg>
+            <h1 class="monstertext">Monsters</h1>
+        </div>
+        <div class="create-monster">
+            <p class="crmnstr">Create Monster</p>
+            <div class="create-monster-container">
+                <div class="image-slide">
+                    <img src="./icons/arrow-left.svg" class="prev" id="prev" style="height: 50px; width: 50px; position: absolute; top: 12%; left: 10%; cursor: pointer;"></img>
+                    <div class="images">
+                        <img class="image1 current" src="./icons/air.svg" style="width: 100px; height: 100px;"></img>
+                        <img class="image2" src="./icons/earth.svg" style="height: 100px; width: 100px;"></img>
+                        <img class="image3" src="./icons/water.svg" style="height: 100px; width: 100px;"></img>
+                        <img class="image4" src="./icons/fire.svg" style="height: 100px; width: 100px;"></img>
+                    </div>
+                    <img src="./icons/arrow-right.svg" class="next" id="next" style="height: 50px; width: 50px; position: absolute; top: 12%; right: 10%; cursor: pointer;"></img>
+                </div>
+                <div class="namee">
+                    <input type="text" placeholder="Name" id="name" autocomplete="off" required>
+                    <label for="name" class="hdhdf"></label>
+                </div>
+                <div class="setmonsterabilities">
+                    <label for="quanity"><img src="./icons/attack.svg" style="height: 30px; width: 30px;"></img></label>
+                    <input type="number" id="quanity" name="quanity" min="1" max="100" required>
+                    <label for="quanity2"><img src="./icons/defense.svg" style="height: 30px; width: 30px; margin-left: 5px;"></img></label>
+                    <input type="number" id="quanity2" name="quanity" min="1" max="100" required>
+                </div>
+                <div class="addnewone">
+                    <button class="btn">ADD</button>
+                </div>
+            </div>
+            <div class="monsterscage">
+                <div class="outofacontent">                
+                    <p class="textmonsters">Monsters</p>
+                    <input type="search" class="search" name="search" id="search" autocomplete="off" placeholder="Search">
+                    <label for="search" class="searchlabel">
+                        <img class="searchicon" src="./icons/search.svg" style="width: 15px; height: 15px;"></img>
+                    </label>
+                </div>
+                <div class="monstersall">
+                    <ul class="uli"></ul>
+                    <p class="donthave">You don't have monsters</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
+</body>
+</html>

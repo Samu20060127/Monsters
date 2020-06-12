@@ -1,0 +1,291 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    animation: fade 0.5s;
+}
+
+.monsterlogo {
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    width: 120px;
+    height: 120px;
+}
+
+.monstertext {
+    position: absolute;
+    top: 20%;
+    left: 44%;
+}
+
+.crmnstr {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+.create-monster-container {
+    width: 280px;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    border: 1px solid #000;
+    padding: 20px;
+}
+
+.images {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin-top: -10px;
+    margin-left: 69px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.images img {
+    transform: translateX(100%);
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.images img.current {
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 200;
+}
+
+.namee {
+    position: absolute;
+    top: 45%;
+    width: 240px;
+}
+
+input[type=text] {
+    width: 240px;
+    padding: 5px;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid rgb(117, 115, 115);
+    box-sizing: border-box;
+    outline: none;
+    z-index: -1;
+}
+
+.hdhdf::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    height: 2.5px;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left;
+}
+
+input[type=text]:focus + .hdhdf::before{
+    transform: scaleX(1);
+    outline: none;
+    border: none;
+}
+
+.btn, .btn:focus {
+    margin-top: 10px;
+    position: relative;
+    padding: .85em 1.1em;
+    left: 38%;
+    background-color: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+}
+
+.setmonsterabilities {
+    display: flex;
+    margin-top: 80px;
+}
+
+#quanity, #quanity2 {
+    position: relative;
+    padding-left: 10px;
+    height: 29px;
+    margin-left: 5px;
+    outline: none;
+    border: 1.5px solid rgb(148, 144, 144);
+    border-radius: 5px;
+    background: none;
+    transition: border 0.3s ease-in-out;
+}
+
+#quanity:focus, #quanity2:focus {
+    border: 1.5px solid black;
+    box-shadow: 10px 10px 10px solid black;
+}
+
+.monstersall {
+    position: absolute;
+    width: 280px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.monsterscage {
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+}
+
+input[type=search] {
+    width: 240px;
+    padding: 5px;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid rgb(117, 115, 115);
+    box-sizing: border-box;
+    outline: none;
+    z-index: -1;
+}
+
+.searchicon {
+    position: absolute;
+    right: 10px;
+    top: 33px;
+}
+
+
+.searchlabel::before {
+    content: '';
+    position: absolute;
+    top: 53px;
+    left: 0;
+    width: 240px;
+    height: 2.1px;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left;
+}
+
+input[type=search]:focus + .searchlabel::before{
+    transform: scaleX(1);
+    outline: none;
+    border: none;
+    appearance: none;
+    outline-offset: -2;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
+.donthave {
+    text-align: center;    
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+span {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: #000;
+    pointer-events: none;
+    border-radius: 50%;
+    animation: ripple 1s linear infinite;
+}
+
+@keyframes ripple {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
+
+.mymonster {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+.mymonsterlogo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.monstersname {
+    position: absolute;
+    top: 2px;
+    left: 45px;
+}
+
+.uli li{
+    list-style: none;
+    display: block;
+    position: relative;
+}
+
+.damageicon {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 25px;
+    left: 45px;
+}
+
+.defenseicon {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 25px;
+    left: 90px;
+}
+
+.damagenumber {
+    position: absolute;
+    top: 21px;
+    left: 63px;
+}
+
+.defensenumber {
+    position: absolute;
+    top: 21px;
+    left: 108px;
+}
+
+.trashbtn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
